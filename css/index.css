@@ -2,3 +2,39 @@
     margin-left: 1400px;
 
 }
+
+/* Style for the form container */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style for form labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Style for form input fields */
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Style for form submit button */
+form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style for form cancel button */
+form .btn-secondary {
+    background-color: #aaa;
+    color: white;
+    cursor: pointer;
+}

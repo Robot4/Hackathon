@@ -128,11 +128,12 @@ function uploadImage() {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </head>
 <body>
-<a href="logout.php" class="btn btn-dark">Logout</a>
+<br>
+<a href="logout.php" class="btn btn-dark">Logout </a>
 
 <div class="container">
     <center>
-        <h2>My Recipes</h2>
+        <h2>Mes Recettes</h2>
     </center>
 
     <!-- Display recipes in a table -->
@@ -178,6 +179,7 @@ function uploadImage() {
 
     <div id="addRecipeForm" style="display: none;">
         <h2>Ajouter une nouvelle recette </h2>
+
         <form action="" method="post" enctype="multipart/form-data">
             <input type="hidden" name="id" value="">
             <label for="name">Nom:</label>
@@ -198,7 +200,7 @@ function uploadImage() {
             <input type="submit" value="Ajoutter">
             <br>
             <br>
-            
+
         </form>
 
         <button type="button" class="btn btn-secondary" id="cancelRecipeBtn">Anuller</button>

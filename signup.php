@@ -45,33 +45,63 @@ $conn->close();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
+    <title>Reccetes</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+
 </head>
-<body>
-<form action="" method="post">
+<body bgcolor="#28bc89">
+<img class="wave" src="http://github.com/sefyudem/Responsive-Login-Form/blob/master/img/wave.png?raw=true">
+<div class="container">
+    <div class="img">
+        <img id="bg" src="images/pngwing.com.png">
 
-    <h2>Create Account</h2>
+    </div>
+    <div class="login-content">
 
-    <?php
-    if(isset($error_message)) {
-        echo "<p style='color: red;'>$error_message</p>";
-    } elseif (isset($success_message)) {
-        echo "<p style='color: green;'>$success_message</p>";
-    }
-    ?>
 
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required><br>
+        <form action="" method="post">
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br>
+            <img src="images/login.logo.png">
+            <h2 class="title">BIENVENUE</h2>
+            <?php
+            if(isset($error_message)) {
+                echo "<p style='color: red;'>$error_message</p>";
+            } elseif (isset($success_message)) {
+                echo "<p style='color: green;'>$success_message</p>";
+            }
+            ?>
+            <div class="input-div one">
+                <div class="i">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                    <h5>Username</h5>
+                    <input type="text" class="input" id="username" name="username" required><br>
 
-    <input type="submit" value="Create Account">
+                </div>
+            </div>
+            <div class="input-div pass">
+                <div class="i">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="div">
+                    <h5>Password</h5>
+                    <input type="password" class="input" id="password" name="password" required><br>
 
-</form>
+                </div>
+            </div>
+            <a href="login.php">Vous avez déjà un compte?</a>
+            <input type="submit" class="btn" value="Créer un compte">
+
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

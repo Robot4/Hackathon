@@ -49,7 +49,7 @@ $conn->close();
     <link rel="stylesheet" type="text/css" href="css/login.css" />
 
 </head>
-<body>
+<body bgcolor="#28bc89">
 <img class="wave" src="http://github.com/sefyudem/Responsive-Login-Form/blob/master/img/wave.png?raw=true">
 <div class="container">
     <div class="img">
@@ -83,7 +83,7 @@ $conn->close();
 
                 </div>
             </div>
-            <a href="signup.php">Create Account ??</a>
+            <a href="signup.php">Créer un compte ??</a>
             <input type="submit" class="btn" value="Login">
 
         </form>
